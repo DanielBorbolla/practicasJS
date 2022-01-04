@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="funcion1.js"></script> 
+    <script src="funcion2.js"></script> 
+    <script src="funcion3.js"></script> 
+    <script src="funcion4.js"></script> 
+    <script src="funcion5.js"></script> 
+    <script src="postwork.js"></script> 
+         <!-- function ejercicio2(){
+            let usuario = prompt("ingresa tu nombre");
+            let edad = prompt("ingresa tu edad");
+            let w = Number(edad);
+            if (w >= 18){
+                document.getElementById("ejercicio2").innerHTML =  "hola " + usuario + " puedes votar";
+            }
+            
+        }
+        document.getElementById("boton2").onclick = function () {ejercicio2();} -->
+    <input id="Nombre" type="text" placeholder="ingresa tu nombre">
+    <input id="Apellido" type="text" placeholder="ingresa tu apellido">
+    <h1 id = "programa1">nombre completo: </h1>
+    <button id= "ejercicio1">Ejercicio 1</button>
+    <section>
+    <input id="Usuario" type="text" placeholder="ingresa tu nombre">
+    <input id="Edad" type="text" placeholder="ingresa edad">
+    <h1 id ="programa2">Validación de Ciudadano</h1>
+    <button id="ejercicio2">Ejercicio 2</button>
+    </section>
+    <section>
+        <h1> Seleccione una opción: </h1>
+        <h2> opción 1: duplicar un número</h2>
+        <h2>opción 2: multiplicar por otro número</h2>
+        <h2 id ="programa3">Resultado: </h2>
+    </section>
+    <button id="ejercicio3">Ejercicio 3</button>
+    <h1 id ="programa4">Lista de nombres</h1>
+    <button id ="ejercicio4">Ejercicio 4</button>
+    <h1 id="programa5">Calificaciones alumnos</h1>
+    <button id = "ejercicio5">Ejercicio 5</button>
+    <h1 id="postwork">Postwork</h1>
+    <input id="NOM" type ="text" placeholder="ingresa el nombre">
+    <select name="Grupo" id="Grupo">
+        <option selected value="0">Grupo</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+    
+    <input id="Mate" type ="number" placeholder="matematicas">
+    <input id="Esp" type ="number" placeholder="Español">
+    <input id="Geo" type ="number" placeholder="Geografía">
+    <input id="Ing" type ="number" placeholder="Ingles">
+    <input id="Soc" type ="number" placeholder="Sociales">
+    <button id = "Add">Agregar Estudiante</button>
+    <div>
+    <table class = "table" id="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Grupo</th>
+          <th>Matematicas</th>
+          <th>Español</th>
+          <th>Geografía</th>
+          <th>Ingles</th>
+          <th>Sociales</th>
+          <th>Promedio</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+    <script> 
+    document.getElementById("ejercicio1").onclick = function () {programa1()}
+    document.getElementById("ejercicio2").onclick = function () {programa2()}
+    document.getElementById("ejercicio3").onclick = function () {programa3()}
+    document.getElementById("ejercicio4").onclick = function () {programa4()}
+    document.getElementById("ejercicio5").onclick = function () {programa5()}
+    document.getElementById("Add").onclick = function () {Guardar()} 
+    </script>
+  
+  <style media="screen">
+        input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button{
+      -webkit-appearance:none;
+    }
+    input[type="number"]{
+      -moz-appearance:textfield;
+    }
+  </style>
+</body>
+</html>
